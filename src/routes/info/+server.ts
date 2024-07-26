@@ -1,6 +1,6 @@
 import { json } from '@sveltejs/kit';
 
-const onlyoffice_url: string = process.env.UMBREL_URL === undefined ? "http://umbrel.local:5672" : process.env.UMBREL_URL;
+const onlyoffice_url: string = process.env.ONLYOFFICE_URL === undefined ? "http://umbrel.local:5672" : process.env.UMBREL_URL;
 const nextcloud_url: string = process.env.NEXTCLOUD_URL === undefined ? "http://umbrel.local:8081": process.env.NEXTCLOUD_URL;
 const secret_key: string = process.env.SECRET_KEY === undefined ? "Leave this field blank" : process.env.SECRET_KEY;
 const enable_ssl: string = process.env.ENABLE_SSL === undefined ? false : process.env.ENABLE_SSL_VALIDATION;
