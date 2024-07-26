@@ -1,7 +1,7 @@
 version: '3.9'
 services:
   web:
-    image: a4004/onlyoffice-nextcloud-web:1.0.0@sha256:c4fcf04e61510dd83482194b5c4fbf6cd26dbb15c772bda45df48f91f86ca892
+    image: a4004/onlyoffice-nextcloud-web:1.0.3@sha256:d74986a1f2bf665fea92c3313006906acf9b0c8412aecd38ebf0578513c0ad75
     restart: on-failure
     ports:
       - 3000:3000

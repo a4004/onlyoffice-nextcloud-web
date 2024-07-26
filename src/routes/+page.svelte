@@ -152,16 +152,16 @@
                                 <Snippet bind:value={$DOCS_ADDRESS}/>
                             </div>
                             <div>Disable certificate verification (insecure):
-                                <span class="font-bold font-mono">Leave blank</span>
+                                <span class="font-bold font-mono ml-2">Yes - tick this box</span>
                             </div>
                             <div>Secret Key:
-                                <span class="font-bold font-mono">Leave blank</span>
+                                <span class="font-bold font-mono ml-2">Leave blank</span>
                             </div>
                         </div>
                         <h3 class="text-md font-semibold mb-1">Advanced server settings:</h3>
                         <div class="flex flex-col text-sm pb-4 gap-y-0.5">
                             <div>Authorization header: 
-                                <span class="font-bold font-mono">Leave blank</span>
+                                <span class="font-bold font-mono ml-2">Leave blank</span>
                             </div>
                             <div>ONLYOFFICE Docs address for internal requests from the server:
                                <Snippet bind:value={$DOCS_INTERNAL_ADDRESS}/>
