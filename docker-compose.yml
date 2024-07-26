@@ -3,8 +3,10 @@ services:
   web:
     image: a4004/onlyoffice-nextcloud-web:1.0.0@sha256:c4fcf04e61510dd83482194b5c4fbf6cd26dbb15c772bda45df48f91f86ca892
     restart: on-failure
-    environment:
-      - ONLYOFFICE_URL=http://$DEVICE_DOMAIN_NAME:5672
-      - NEXTCLOUD_URL=http://$DEVICE_DOMAIN_NAME:8081
     ports:
       - 3000:3000
+    environment:
+      - DOCS_ADDRESS=http://$DEFAULT_INTERFACE_IP:5672
+      - DOCS_INTERNAL_ADDRESS=http://$DEFAULT_INTERFACE_IP:5672
+      - NEXTCLOUD_INTERNAL_ADDRESS=http://$DOCKER_INTERFACE_IP:$APP_NEXTCLOUD_PORT
+      - NEXTCLOUD_WEB_URL=htp://$DEVICE_DOMAIN_NAME:$APP_NEXTCLOUD_PORT
