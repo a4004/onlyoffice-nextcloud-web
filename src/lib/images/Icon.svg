@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="objectBoundingBox" x1="0.5011716" y1="1.5194112" x2="0.5011716" y2="-0.61521494" id="gradient_1">
+      <stop offset="0%" stop-color="#FCC2B1" />
+      <stop offset="88.48%" stop-color="#D9420B" />
+    </linearGradient>
+    <linearGradient gradientUnits="objectBoundingBox" x1="0.49964464" y1="1.3113202" x2="0.49964464" y2="-0.094192505" id="gradient_2">
+      <stop offset="0%" stop-color="#DEEDC9" />
+      <stop offset="66.06%" stop-color="#8BBA25" />
+    </linearGradient>
+    <linearGradient gradientUnits="objectBoundingBox" x1="0.49964464" y1="1.3148245" x2="0.49964464" y2="-0.031656556" id="gradient_3">
+      <stop offset="0%" stop-color="#C2EBFA" />
+      <stop offset="100%" stop-color="#26A8DE" />
+    </linearGradient>
+    <path d="M256 0L256 0L256 256L0 256L0 0L256 0Z" id="path_1" />
+    <path d="M166 0L166 0L166 155L0 155L0 0L166 0Z" id="path_2" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+    <clipPath id="clip_2">
+      <use xlink:href="#path_2" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+  </defs>
+  <g id="Icon">
+    <path d="M256 0L256 0L256 256L0 256L0 0L256 0Z" id="Icon" fill="#F2F2F2" stroke="none" />
+    <g id="ONLYOFFICE_logo_(symbol)" clip-path="url(#clip_1)">
+      <path d="M166 0L166 0L166 155L0 155L0 0L166 0Z" id="ONLYOFFICE_logo_(symbol)" fill="none" stroke="none" transform="translate(45 51)" />
+      <path d="M72.6326 152.164L4.36174 120.716C-1.45392 117.971 -1.45392 113.728 4.36174 111.232L28.1301 100.25L72.3797 120.716C78.1954 123.462 87.5512 123.462 93.114 120.716L137.364 100.25L161.132 111.232C166.948 113.977 166.948 118.22 161.132 120.716L92.8611 152.164C87.5512 154.66 78.1954 154.66 72.6326 152.164L72.6326 152.164Z" id="Shape" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none" clip-path="url(#clip_2)" transform="translate(45 51)" />
+      <path d="M72.6326 113.477L4.36175 82.029C-1.45392 79.2837 -1.45392 75.0406 4.36175 72.5446L27.6245 61.8124L72.6326 82.5283C78.4484 85.2736 87.8039 85.2736 93.3667 82.5283L138.375 61.8124L161.638 72.5446C167.453 75.2902 167.453 79.5333 161.638 82.029L93.3667 113.477C87.5512 116.223 78.1955 116.223 72.6326 113.477L72.6326 113.477Z" id="Shape" fill="url(#gradient_2)" fill-rule="evenodd" stroke="none" clip-path="url(#clip_2)" transform="translate(45 51)" />
+      <path d="M72.6326 75.7893L4.36175 44.3412C-1.45392 41.5956 -1.45392 37.3525 4.36175 34.8568L72.6326 3.40856C78.4484 0.663078 87.8039 0.663078 93.3667 3.40856L161.638 34.8568C167.453 37.6022 167.453 41.8452 161.638 44.3412L93.3667 75.7893C87.5512 78.2853 78.1955 78.2853 72.6326 75.7893L72.6326 75.7893Z" id="Shape" fill="url(#gradient_3)" fill-rule="evenodd" stroke="none" clip-path="url(#clip_2)" transform="translate(45 51)" />
+    </g>
+  </g>
+</svg>
