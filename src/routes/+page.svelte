@@ -78,7 +78,8 @@
                             Get Started
                         </h2>
                         <h3 class="text-sm">
-                            Follow these steps on this page to set up ONLYOFFICE on your Nextcloud.
+                            Follow these steps on this page to set up ONLYOFFICE
+                            on your Nextcloud.
                         </h3>
                     </div>
                 </div>
@@ -146,40 +147,56 @@
             <div class="px-8 pt-6 pb-3">
                 <div class="flex flex-row items-center gap-x-4">
                     <div class="flex flex-col">
-                        <h3 class="text-md font-semibold mb-1">Server settings:</h3>
+                        <h3 class="text-md font-semibold mb-1">
+                            Server settings:
+                        </h3>
                         <div class="flex flex-col text-sm pb-4 gap-y-0.5">
-                            <div>ONLYOFFICE Docs address: 
-                                <Snippet bind:value={$DOCS_ADDRESS}/>
+                            <div>
+                                ONLYOFFICE Docs address:
+                                <Snippet bind:value={$DOCS_ADDRESS} />
                             </div>
-                            <div>Disable certificate verification (insecure):
-                                <span class="font-bold font-mono ml-2">Yes - tick this box</span>
+                            <div>
+                                Disable certificate verification (insecure):
+                                <span class="font-bold font-mono ml-2"
+                                    >Yes - tick this box</span
+                                >
                             </div>
-                            <div>Secret Key:
-                                <span class="font-bold font-mono ml-2">Leave blank</span>
+                            <div>
+                                Secret Key:
+                                <span class="font-bold font-mono ml-2"
+                                    >Leave blank</span
+                                >
                             </div>
                         </div>
-                        <h3 class="text-md font-semibold mb-1">Advanced server settings:</h3>
+                        <h3 class="text-md font-semibold mb-1">
+                            Advanced server settings:
+                        </h3>
                         <div class="flex flex-col text-sm pb-4 gap-y-0.5">
-                            <div>Authorization header: 
-                                <span class="font-bold font-mono ml-2">Leave blank</span>
+                            <div>
+                                Authorization header:
+                                <span class="font-bold font-mono ml-2"
+                                    >Leave blank</span
+                                >
                             </div>
-                            <div>ONLYOFFICE Docs address for internal requests from the server:
-                               <Snippet bind:value={$DOCS_INTERNAL_ADDRESS}/>
+                            <div>
+                                ONLYOFFICE Docs address for internal requests
+                                from the server:
+                                <Snippet bind:value={$DOCS_INTERNAL_ADDRESS} />
                             </div>
-                            <div>Server address for internal requests from ONLYOFFICE Docs:
-                                <Snippet bind:value={$NEXTCLOUD_INTERNAL_ADDRESS}/>
+                            <div>
+                                Server address for internal requests from
+                                ONLYOFFICE Docs:
+                                <Snippet
+                                    bind:value={$NEXTCLOUD_INTERNAL_ADDRESS}
+                                />
                             </div>
                         </div>
                         <Alert.Root>
                             <InfoIcon class="h-4 w-4" />
-                            <Alert.Title>Remarks</Alert.Title>
+                            <Alert.Title>Important Notice</Alert.Title>
                             <Alert.Description>
-                                These settings are unlikely to cause a security
-                                problem in most cases when using your Umbrel on
-                                your local home network. Support for encrypted
-                                connections and authentication will be coming in
-                                a future update of umbrelOS and subsequently,
-                                this app.
+                                Under typical conditions, these settings should not pose a significant security risk when using your Umbrel on a local home network. 
+                                Support for encrypted connections and authentication will be introduced in a future update.
                             </Alert.Description>
                         </Alert.Root>
                     </div>

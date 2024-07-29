@@ -1,12 +1,12 @@
 version: '3.9'
 services:
   web:
-    image: a4004/onlyoffice-nextcloud-web:1.0.3@sha256:d74986a1f2bf665fea92c3313006906acf9b0c8412aecd38ebf0578513c0ad75
+    image: a4004/onlyoffice-nextcloud-web:1.0.4@sha256:774bd9bda641e6be49286921637840efba050fdfd022934dfd9ee9b6ec8d0a63
     restart: on-failure
     ports:
       - 3000:3000
     environment:
-      - DOCS_ADDRESS=http://$DEFAULT_INTERFACE_IP:5672
-      - DOCS_INTERNAL_ADDRESS=http://$DEFAULT_INTERFACE_IP:5672
+      - DOCS_ADDRESS=http://$DEFAULT_INTERFACE_IP:$DOCSERVER_PORT
+      - DOCS_INTERNAL_ADDRESS=http://$DEFAULT_INTERFACE_IP:$DOCSERVER_PORT
       - NEXTCLOUD_INTERNAL_ADDRESS=http://$DOCKER_INTERFACE_IP:$APP_NEXTCLOUD_PORT
-      - NEXTCLOUD_WEB_URL=htp://$DEVICE_DOMAIN_NAME:$APP_NEXTCLOUD_PORT
+      - NEXTCLOUD_WEB_URL=http://$DEVICE_DOMAIN_NAME:$APP_NEXTCLOUD_PORT
